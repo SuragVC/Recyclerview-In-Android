@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initData();
         initRecyclerView();
     }
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     private void initRecyclerView() {
         recyclerView = findViewById(R.id.recycler_view);
         layoutManager = new LinearLayoutManager(this);
-
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
     }
